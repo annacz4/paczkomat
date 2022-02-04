@@ -1,0 +1,28 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Odbiór paczki</title>
+</head>
+<body>
+        <h1>Wpisz swoje dane</h1>
+        <form id="phone1" action="last_step.html">
+            <div class="lal">
+            <div class="input_user">
+                <label for="phone_number">Twój numer telefonu</label>
+                <input type="text" id="phone" name="phone" maxlength="9" pattern="[0-9]{3}[0-9]{3}[0-9]{3}" onkeyup="checkForm()" required>
+                <label for="kod">Kod odbioru paczki</label>
+                <input type="text" id="code"  name="code" maxlength="4" pattern="\d{4}" onkeyup="checkForm()" required>
+            </div>
+            </div>
+            <div class="container">
+                <div class="center">
+                <button type="submit" class="buttonPackage" disabled>Odbierz paczkę</button>
+                </div>
+            </div>
+        </form>
+    <script src="sandbox.js"></script>
+</body>
+</html>
